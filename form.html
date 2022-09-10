@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/cf7cb78f1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+    <h1 style="text-align:center; color:blueviolet">Registration Form</h1>
+    <form name="rform" onsubmit="return validate()" method="post">
+     <p>
+      Name:<br>  <input type="text" size="50" name="name"/>
+      <span id="name"></span>
+    </p>
+    <br>
+    <p>
+      Adress:<br> <input type="text" size="50" name="adress"/>
+      <span id="adress"></span>
+    </p>
+    <br>
+    <p>
+        Email Address:<br> <input type="text" size="50" name="mail"/>
+        <span id="email"></span>
+    </p>
+    <br>
+    <P>
+        Password:<br> <input type="text" size="50" name="password"/>
+        <span id="password"></span>
+    </P>
+    <br>
+    <p>
+        Re-Enter Password:<br><input type="text" size="50" name="spassword"/>
+        <span id="spassword"></span>
+    </p>
+    <br>
+    <p>
+        Phone No:<br> <input type="text" size="50" name="phone"/>
+        <span id="phone"></span>
+    </p>
+    <br>
+    <p>
+        select your course:<br>
+        <select type="text" name="subject" value="">
+            <option >java script</option>
+            <option >react js</option>
+            <option >express js</option>
+            <option >node js</option>
+            <option >vue js</option>
+        </select>
+        <span id="subject"></span>
+    </p>
+    <br>
+    <br>
+    <p>
+        Comments:<br> <textarea col="55" name="comment"></textarea>
+    </p>
+    <p class="sr"> 
+        <input class="submit" type="submit" value="send" name="submit">
+        <input class="reset" type="reset" value="reset" name="reset">
+    </p>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>
